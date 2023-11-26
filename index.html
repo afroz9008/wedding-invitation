@@ -55,6 +55,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courgette&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Gujarati&display=swap">
 
     <!-- App CSS -->
     <link rel="stylesheet" href="./css/app.css">
@@ -94,7 +95,7 @@
         <section class="container" id="home">
 
             <div class="text-center pt-4">
-                <h1 class="font-esthetic my-4" style="font-size: 2.5rem;">Wedding Invitation</h1>
+                <h1 class="font-esthetic my-4" style="font-size: 2.5rem;" id="weddingTitle">Wedding Invitation</h1>
 
                 <div class="py-4">
                     <div class="img-crop  shadow mx-auto">
@@ -102,11 +103,11 @@
                     </div>
                 </div>
 
-                <h1 class="font-esthetic my-4" style="font-size: 3rem;">Afroz & Nafisha</h1>
-                <h4>Sunday, December 03, 2023</h4>
+                <h1 class="font-esthetic my-4" style="font-size: 3rem;" id="brideName">Afroz & Nafisha</h1>
+                <h4 id="dateTitle">Sunday, December 03, 2023</h4>
                 <a class="btn btn-outline-light btn-sm shadow rounded-pill px-3 my-2" target="_blank"
                     href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=The%20Wedding%20of%20Afroz%20and%20Nafisha&details=The%20Wedding%20of%20Afroz%20and%20Nafisha%20%7C%2003%20December%202023%20%7C%20Sorathiya%20Ghanchee%20Jamatkhana,%20Vadala%20Chowk,%20Una%20%7C%2010.00AM%20-%2002.00PM&dates=20231203T100000/20231203T140000&location=https://maps.app.goo.gl/JgTvDHuaQRMwPZ2G7">
-                    <i class="fa-solid fa-calendar-check me-2"></i>Save The Date
+                    <i class="fa-solid fa-calendar-check me-2"></i><span id="saveDate">Save The Date</span>
                 </a>
 
                 <div class="d-flex justify-content-center align-items-center mt-4 mb-2">
@@ -130,12 +131,12 @@
 
             <div class="text-center">
                 <h1 class="font-arabic py-4 px-2" style="font-size: 2rem">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</h1>
-                <h1 class="font-esthetic py-4 px-2" style="font-size: 2rem">Assalamualaikum Warahmatullahi Wabarakatuh
+                <h1 class="font-esthetic py-4 px-2" style="font-size: 2rem" id="salamTitle">Assalamualaikum Warahmatullahi Wabarakatuh
                 </h1>
 
-                <p class="pb-3 px-3">
-                    With all due respect. We invite you and your relatives.
-                    Please also attend our wedding event:
+                <p class="pb-3 px-3" id="respectTitle">
+                    With all due respect. We invite you and your family.
+                    Please attend our wedding event and give us opportunity to warmly serve you:
                 </p>
 
                 <div class="overflow-x-hidden">
@@ -144,9 +145,9 @@
                         <div class="img-crop border border-3 border-light shadow my-4 mx-auto">
                             <img src="./assets/images/cowo.png" alt="cowo" onclick="util.modal(this)">
                         </div>
-                        <h1 class="font-esthetic" style="font-size: 3rem;">Afroz Sorathiya</h1>
-                        <h5 class="mt-3 mb-0">Son of</h5>
-                        <p class="mb-0">Husenbhai Sorathiya</p>
+                        <h1 class="font-esthetic" style="font-size: 3rem;" id="sonName">Afroz Sorathiya</h1>
+                        <h5 class="mt-3 mb-0" id="sonOf">Son of</h5>
+                        <p class="mb-0" id="sonFatherName">Husenbhai Sorathiya</p>
                     </div>
 
                     <h1 class="font-esthetic my-4" style="font-size: 4rem;">&</h1>
@@ -155,9 +156,9 @@
                         <div class="img-crop border border-3 border-light shadow my-4 mx-auto">
                             <img src="./assets/images/cewe.png" alt="cewe" onclick="util.modal(this)">
                         </div>
-                        <h1 class="font-esthetic" style="font-size: 3rem;">Nafisha Sorathiya</h1>
+                        <h1 class="font-esthetic" style="font-size: 3rem;" id="daughterName">Nafisha Sorathiya</h1>
                         <h5 class="mt-3 mb-0">Daughter of</h5>
-                        <p class="mb-0">Sabbirbhai Sorathiya</p>
+                        <p class="mb-0" id="daughterFatherName">Sabbirbhai Sorathiya</p>
                     </div>
                 </div>
             </div>
@@ -174,7 +175,7 @@
         <div class="container">
             <div class="text-center" data-aos="fade-up" data-aos-duration="2000">
 
-                <h1 class="font-esthetic mt-0 mb-3" style="font-size: 2rem">
+                <h1 class="font-esthetic mt-0 mb-3" style="font-size: 2rem" id="saidTitle">
                     Allah Subhanahu Wa Ta'ala said
                 </h1>
 
@@ -183,7 +184,7 @@
                     وَجَعَلَ بَيۡنَكُم مَّوَدَّةٗ وَرَحۡمَةًۚ إِنَّ فِي ذَٰلِكَ لَأٓيَٰتٖ لِّقَوۡمٖ يَتَفَكَّرُونَ
                 </p>
 
-                <p style="font-size: 0.9rem;" class="px-2">
+                <p style="font-size: 0.9rem;" class="px-2" id="ayat">
                     And of His signs is that He created for you from yourselves mates that you may find tranquillity in
                     them; and He placed between you affection and mercy. Indeed in that are signs for a people who give
                     thought.
@@ -194,7 +195,7 @@
                     درمیان محبت اور ہمدردی قائم کر دی، یقیناً غور وفکر کرنے والوں کے لئے اس میں بہت سی نشانیاں ہیں
                 </p>
 
-                <span class="mb-0"><strong>QS. Ar-Rum Ayat 21</strong></span>
+                <span class="mb-0"><strong id="ayat21">QS. Ar-Rum Ayat 21</strong></span>
             </div>
         </div>
 
@@ -211,54 +212,54 @@
             <div class="container">
                 <div class="text-center">
 
-                    <h1 class="font-esthetic py-3" style="font-size: 2rem;">Time to Event</h1>
+                    <h1 class="font-esthetic py-3" style="font-size: 2rem;" id="eventTimeTitle">Time to Event</h1>
                     <div class="border rounded-pill shadow py-2 px-3 mx-2 mb-4">
 
                         <!-- Replace the time with time-data (according to the format) -->
                         <div class="row justify-content-center" time-data="2023-12-03 10:00:00" id="time-display">
-                            <div class="samll-font col-2 p-1 ps-2">
+                            <div class="samll-font col p-1 ps-2">
                                 <h2 class="d-inline m-0 p-0" id="day">0</h2><small
-                                    class="ms-1 me-0 my-0 p-0 d-inline">Day</small>
+                                    class="ms-1 me-0 my-0 p-0 d-inline" id="dayTitle">Day</small>
                             </div>
-                            <div class="samll-font col-3 p-1">
+                            <div class="samll-font col p-1">
                                 <h2 class="d-inline m-0 p-0" id="hours">0</h2><small
-                                    class="ms-1 me-0 my-0 p-0 d-inline">Hours</small>
+                                    class="ms-1 me-0 my-0 p-0 d-inline" id="hoursTitle">Hours</small>
                             </div>
-                            <div class="samll-font col-3 p-1">
+                            <div class="samll-font col p-1">
                                 <h2 class="d-inline m-0 p-0" id="minutes">0</h2><small
-                                    class="ms-1 me-0 my-0 p-0 d-inline">Minutes</small>
+                                    class="ms-1 me-0 my-0 p-0 d-inline" id="minutesTitle">Minutes</small>
                             </div>
-                            <div class="samll-font col-4 p-1">
+                            <div class="samll-font col p-1">
                                 <h2 class="d-inline m-0 p-0" id="seconds">0</h2><small
-                                    class="ms-1 me-0 my-0 p-0 d-inline">Seconds</small>
+                                    class="ms-1 me-0 my-0 p-0 d-inline" id="secondsTitle">Seconds</small>
                             </div>
                         </div>
                     </div>
 
-                    <p style="font-size: 0.9rem;" class="mt-4 py-2">
-                        By asking for the mercy and pleasure of Allah Subhanahu Wa Ta'ala, Allah Ta'ala willing we will
+                    <p style="font-size: 0.9rem;" class="mt-4 py-2" id="organizeEventTitle">
+                        By asking for the mercy and pleasure of Allah Subhanahu Wa Ta'ala,By Allah Ta'ala willing we will
                         organize the event:
                     </p>
 
                     <div class="overflow-x-hidden">
                         <div class="py-2" data-aos="fade-left" data-aos-duration="1500">
-                            <h1 class="font-esthetic" style="font-size: 2rem;">Wedding start at</h1>
+                            <h1 class="font-esthetic" style="font-size: 2rem;" id="startAt">Wedding start at</h1>
                             <p>10:00 AM </p>
                         </div>
 
-                        <div class="py-2" data-aos="fade-right" data-aos-duration="1500">
+                        <!-- <div class="py-2" data-aos="fade-right" data-aos-duration="1500">
                             <h1 class="font-esthetic" style="font-size: 2rem;">End at</h1>
                             <p>02:00 PM</p>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="py-2" data-aos="fade-up" data-aos-duration="1500">
                         <a class="btn btn-outline-light btn-sm shadow rounded-pill px-3 my-2" target="_blank"
                             href="https://maps.app.goo.gl/JgTvDHuaQRMwPZ2G7">
-                            <i class="fa-solid fa-map-location-dot me-2"></i> Look at Google Maps
+                            <i class="fa-solid fa-map-location-dot me-2"></i> <span id="lookAtGoogle">Look at Google Maps</span>
                         </a>
-                        <p class="mb-0 mt-1 mx-1 pb-4" style="font-size: 0.9rem;">
-                            Sorathiya Ghanchee Jamatkhana, Vadala Chowk, Una
+                        <p class="mb-0 mt-1 mx-1 pb-4" style="font-size: 0.9rem;" id="location">
+                            Sorathiya Ghanchi Jamatkhana, Vadla Chowk, Una
                         </p>
                     </div>
                 </div>
@@ -276,11 +277,11 @@
         <div class="container">
             <div class="text-center">
 
-                <p style="font-size: 0.9rem;" class="pt-2 pb-1 px-2" data-aos="fade-up" data-aos-duration="1500">
-                    It is an honor and happiness for us if coming. Thank you for coming to give us your blessing.
+                <p style="font-size: 0.9rem;" class="pt-2 pb-1 px-2" data-aos="fade-up" data-aos-duration="1500" id="greatingTitle">
+                    IIt will be our honour and happiness to greet you with us and your presenece will surely be of great pleasure to us.
                 </p>
 
-                <h1 class="font-esthetic" data-aos="fade-up" data-aos-duration="2000">Waalaikumassalam Warahmatullahi
+                <h1 class="font-esthetic" data-aos="fade-up" data-aos-duration="2000" id="returnSalam">Waalaikumassalam Warahmatullahi
                     Wabarakatuh</h1>
                 <h1 class="font-arabic py-4 px-2" data-aos="fade-up" data-aos-duration="2000" style="font-size: 2rem">
                     اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَۙ</h1>
@@ -290,7 +291,7 @@
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                     <div class="col-auto">
                         <small class="text-light">
-                            Build with<i class="fa-solid fa-heart mx-1"></i>Afroz Sorathiya
+                            Build with<i class="fa-solid fa-heart mx-1"></i><a href="https://afroz-sorathiya.cf">Afroz Sorathiya</a>
                         </small>
                     </div>
                 </div>
@@ -303,6 +304,7 @@
         <div class="d-flex justify-content-center align-items-center" style="height: 100vh !important;">
 
             <div class="text-center">
+                <h1 class="font-esthetic mb-4" style="font-size: 2.5rem;" id="sunnatGreating">النِّكَاحُ مِنْ سُنَّتِي</h1>
                 <h1 class="font-esthetic mb-4" style="font-size: 2.5rem;">The Wedding Of</h1>
 
                 <div class="img-crop shadow mb-4 mx-auto">
@@ -313,6 +315,9 @@
 
                 <button type="button" class="btn btn-light shadow rounded-4 mt-4" onclick="util.open()">
                     <i class="fa-solid fa-envelope-open me-2"></i>View Invitation
+                </button>
+                <button type="button" class="btn btn-light shadow rounded-4 mt-4" onclick="util.open('GUJ')">
+                    <i class="fa-solid fa-envelope-open me-2"></i>આમંત્રણ જુઓ
                 </button>
             </div>
         </div>
@@ -357,7 +362,7 @@
         integrity="sha256-pQBbLkFHcP1cy0C8IhoSdxlm0CtcH5yJ2ki9jjgR03c=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"
         integrity="sha256-XG5M9shcLLpu8ct5bVbu6lLVzLpfZChl+csxdyLVP18=" crossorigin="anonymous"></script>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <!-- App JS -->
     <script src="./js/app.js"></script>
 </body>

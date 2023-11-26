@@ -145,7 +145,7 @@ const util = (() => {
         })();
     };
 
-    const open = async () => {
+    const open = async (lang) => {
         document.querySelector('body').style.overflowY = 'scroll';
         AOS.init();
         audio.play();
@@ -159,6 +159,33 @@ const util = (() => {
             zIndex: 1057
         });
         await animation();
+        if (lang === "GUJ") {
+            document.getElementById('weddingTitle').innerHTML = 'લગ્નનું આમંત્રણ';
+            document.getElementById('brideName').innerHTML = 'અફરોઝ <br>&<br> નફીસા';
+            document.getElementById('saveDate').innerHTML = 'તારીખ સાચવવા માટે અહીં ક્લિક કરો';
+            document.getElementById('dateTitle').innerHTML = 'રવિવાર, 03 ડિસેમ્બર, 2023';
+            document.getElementById('salamTitle').innerHTML = 'અસલામુઅલૈકુમ વરહમતુલ્લાહી વબરકાતુહુ';
+            document.getElementById('respectTitle').innerHTML = 'બધા યોગ્ય આદર સાથે. અમે તમને અને તમારા પરિવારને આમંત્રિત કરીએ છીએ. કૃપા કરીને અમારા લગ્ન પ્રસંગમાં હાજરી આપજો:';
+            document.getElementById('sonName').innerHTML = 'અફરોઝ સોરઠીયા';
+            // document.getElementById('sonOf').innerHTML = 'નો પુત્ર';
+            document.getElementById('sonFatherName').innerHTML = 'હુસેનભાઈ સોરઠીયા';
+            document.getElementById('daughterName').innerHTML = 'નફીસા સોરઠીયા';
+            document.getElementById('daughterFatherName').innerHTML = 'સબ્બીરભાઈ સોરઠીયા';
+            document.getElementById('saidTitle').innerHTML = `અલ્લાહ સુબાનાહુ વા તા'આલા નુ ઇર્શાદ છે કે`;
+            document.getElementById('ayat').innerHTML = `અને તેની નિશાનીઓમાં એ છે કે તેણે તમારા માટે તમારામાંથી જોડી બનાવી, જેથી તમે તેમનામાં શાંતિ મેળવી શકો. અને તેણે તમારી વચ્ચે પ્રેમ અને દયા મૂકી. ખરેખર, આમાં વિચારનારા લોકો માટે ઘણી નિશાનીઓ છે.`;
+            document.getElementById('ayat21').innerHTML = `સુરહ અર-રૂમ: આયત ૨૧`;
+            document.getElementById('eventTimeTitle').innerHTML = `પ્રસંગનો સમય`;
+            document.getElementById('dayTitle').innerHTML = `દિવસ`;
+            document.getElementById('hoursTitle').innerHTML = `કલાક`;
+            document.getElementById('minutesTitle').innerHTML = `મિનિટ`;
+            document.getElementById('secondsTitle').innerHTML = `સેકન્ડ`;
+            document.getElementById('organizeEventTitle').innerHTML = `અલ્લાહ સુબાનાહુ વ તઆલાની દયા ઈચ્છાથી અમે ઇવેન્ટનું આયોજન કરીશું:`;
+            document.getElementById('startAt').innerHTML = `લગ્ન શરૂ થવાનો સમય`;
+            document.getElementById('lookAtGoogle').innerHTML = `ગૂગલ મેપ્સ માં લોકેશન જુઓ`;
+            document.getElementById('location').innerHTML = `સોરઠીયા ઘાંચી જમાતખાના, વડલા ચોક, ઉના`;
+            document.getElementById('greatingTitle').innerHTML = `અમને તમારો સાથ આવકાર કરવાનું અમારું સૌભાગ્ય અને સુખ હશે અને તમારી હાજરી અમારા માટે ખરેખર આનંદની વાત હશે.`;
+            document.getElementById('returnSalam').innerHTML = `વાલૈકુમસ્સલામ વરહમતુલ્લાહી વબરકાતુહુ`;
+        }
     };
 
     return {
