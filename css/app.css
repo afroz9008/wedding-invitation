@@ -29,8 +29,8 @@ body::-webkit-scrollbar {
 }
 
 .img-crop {
-    width: max(14rem, 90vw);
-    height: max(14rem, 90vw);
+    width: min(14rem, 90vw);
+    height: min(14rem, 90vw);
     position: relative;
     overflow: hidden;
     border-radius: 50%;
